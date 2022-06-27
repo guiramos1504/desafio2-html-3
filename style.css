@@ -140,6 +140,7 @@ input[type="checkbox"]:checked {
 #img-lateral {
     background: url(./assets/side-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
     position: absolute;
     right: 0px;

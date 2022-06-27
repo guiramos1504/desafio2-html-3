@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #191816;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#centro-cinza {
+    display: flex;
+    flex-direction: column;
+    background-color: #24221F;
+    margin: auto 45px;
+    border-radius: 3px;
+}
+
+#area-form {
+    margin: 45px 85px;
+}
+
+#titulo-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 0;
+    gap: 10px;
+}
+
+
+#input-email {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    outline: 1px solid #868686;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+#input-email:focus-within {
+    outline: 3px solid #FFC632;
+}
+
+input[type="email"] {
+    background-color: transparent;
+    border: transparent;
+}
+
+input[type="email"]:focus {
+    outline: transparent;
+}
+
+#mail-icon, #senha-icon {
+    position: absolute;
+}
+
+input[type="email"]:focus ~ #mailfocus-icon {
+    opacity: 0;
+}
+
+#input-senha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+#input-senha span {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#input-senha:focus-within {
+    outline: 3px solid #FFC632;
+}
+
+input[type="password"] {
+    background-color: transparent;
+    border: transparent;
+}
+
+input[type="password"]:focus {
+    outline: transparent;
+}
+
+#sobre-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#botao-envio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: #FFC632;
+    color: #473404;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #868686;
+    border-radius: 0.2em;
+    width: 1.15em;
+    height: 1.15em;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FFC632;
+    border: #FFC632;
+    background-image: url(./assets/check.svg);
+    background-size: 100%;
+}
+
+#img-lateral {
+    background: url(./assets/side-image.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+ }
+
+/*----FONTES---FONTES---FONTES----*/
+
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    color: #d4ccb6;
+}
+
+label {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #AFB6C2;
+}
+
+#legenda-titulo{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFB6C2;
+    line-height: 3em;
+}
+
+#lembre-me {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #AFB6C2;
+}
+
+#esqueci {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFC632;
+    cursor: pointer;
+}
+
+#registre-se {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFC632;
+    cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+    #img-lateral {
+        background: none;
+    }
+    main {
+        width: 100vw;
+    }
+    body {
+        justify-content: center;
+    }
+    #centro-cinza {
+        margin: 40px 5px;
+        padding: auto;
+        background-color: transparent;
+    }
+    #area-form {
+        margin: auto;
+    }
+}
